@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>Sustainable Living | Green Future</title>
+  <style>
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: #333;
+      min-height: 100vh;
+      padding-top: 60px; 
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+
+    header {
+      background: rgba(255, 255, 255, 0.9);
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+    }
+
+    .logo {
+      font-weight: bold;
+      color: #2c5530;
+      font-size: 24px;
+    }
+
+    ul.nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    ul.nav-links li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    ul.nav-links li a:hover {
+      color: #2c5530;
+    }
+
+    
+    main {
+      padding: 20px 0;
+    }
+
+    .hero {
+      text-align: center;
+      color: white;
+      margin-bottom: 40px;
+    }
+
+    .hero h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .cta-button {
+      background: #2c5530;
+      color: white;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    
+    .stats {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 30px;
+      color: white;
+      font-weight: bold;
+    }
+
+    .stat-item {
+      text-align: center;
+    }
+
+    .stat-number {
+      font-size: 28px;
+    }
+
+    .stat-label {
+      font-size: 14px;
+      opacity: 0.8;
+    }
+
+    
+    .content-section {
+      background: white;
+      border-radius: 10px;
+      padding: 30px;
+      margin-bottom: 40px;
+    }
+
+    .section-title {
+      text-align: center;
+      color: #2c5530;
+      margin-bottom: 30px;
+      font-size: 28px;
+    }
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #f4f4f4;
+      padding: 20px;
+      border-radius: 8px;
+      border-left: 5px solid #2c5530;
+      text-align: center;
+    }
+
+    .card-icon {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .card h3 {
+      color: #2c5530;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .read-more-btn {
+      margin-top: 10px;
+      background: #2c5530;
+      color: white;
+      border: none;
+      border-radius: 15px;
+      padding: 6px 12px;
+      cursor: pointer;
+      font-size: 13px;
+    }
+
+    .expanded-content {
+      display: none;
+      margin-top: 10px;
+      font-size: 13px;
+      color: #444;
+      text-align: left;
+    }
+
+    
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+
+  
+    @media (max-width: 600px) {
+      .stats {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav ul.nav-links {
+        display: none; /* Hide menu on small screens for simplicity */
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <div class="logo">🌱 EcoLife</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#tips">Tips</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="home" class="hero">
+      <h1>Live Sustainably</h1>
+      <p>Small changes today, big impact tomorrow</p>
+      <a href="#tips" class="cta-button">Start Your Journey</a>
+
+      <div class="stats">
+        <div class="stat-item">
+          <div class="stat-number">2.5M</div>
+          <div class="stat-label">Tons CO₂ Saved</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">150K</div>
+          <div class="stat-label">People Engaged</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">89%</div>
+          <div class="stat-label">Satisfaction Rate</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tips" class="content-section">
+      <h2 class="section-title">Sustainable Living Tips</h2>
+
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card-icon">💡</div>
+          <h3>Energy Conservation</h3>
+          <p>Switch to LED bulbs and unplug devices when not in use to save energy.</p>
+          <button class="read-more-btn" onclick="toggleContent(this)">Read More</button>
+          <div class="expanded-content">
+            <p>LED bulbs use much less energy and last longer. Unplugging devices helps avoid wasting power when not in use.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">♻️</div>
+          <h3>Waste Reduction</h3>
+          <p>Reduce, reuse, and recycle to minimize waste.</p>
+          <button class="read-more-btn" onclick="toggleContent(this)">Read More</button>
+          <div class="expanded-content">
+            <p>Try composting organic waste and reusing items to reduce trash.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">🚶‍♀️</div>
+          <h3>Sustainable Transport</h3>
+          <p>Walk, bike, or use public transport to lower carbon footprint.</p>
+          <button class="read-more-btn" onclick="toggleContent(this)">Read More</button>
+          <div class="expanded-content">
+            <p>Transportation creates many emissions, so choose greener travel options.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">🌿</div>
+          <h3>Green Eating</h3>
+          <p>Eat local, seasonal, and plant-based foods.</p>
+          <button class="read-more-btn" onclick="toggleContent(this)">Read More</button>
+          <div class="expanded-content">
+            <p>Plant-based diets use fewer resources and local food supports farmers.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">💧</div>
+          <h3>Water Conservation</h3>
+          <p>Fix leaks and save water with shorter showers.</p>
+          <button class="read-more-btn" onclick="toggleContent(this)">Read More</button>
+          <div class="expanded-content">
+            <p>Water-saving habits reduce waste and protect this vital resource.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">🏠</div>
+          <h3>Eco-Friendly Home</h3>
+          <p>Use natural cleaners and improve insulation.</p>
+          <button class="read-more-btn" onclick="toggleContent(this)">Read More</button>
+          <div class="expanded-content">
+            <p>Natural products are safer and insulation saves energy for heating/cooling.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <p>&copy; 2025 EcoLife. Building a sustainable future, one step at a time.</p>
+    <p>Contact us: hello@ecolife.com</p>
+  </footer>
+
+  <script>
+    
+    function toggleContent(button) {
+      const content = button.nextElementSibling;
+      if (content.style.display === 'block') {
+        content.style.display = 'none';
+        button.textContent = 'Read More';
+      } else {
+        content.style.display = 'block';
+        button.textContent = 'Read Less';
+      }
+    }
+  </script>
+</body>
+</html>
